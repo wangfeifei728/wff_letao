@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fei-主页</title>
+    <title>Fei-商品管理</title>
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
     <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
@@ -27,11 +27,10 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:;">
+                <a class = "nav-second" href="javascript:;">
                     <span class="glyphicon glyphicon-apple"></span>
                     分类管理
                 </a>
-
                 <!--分类-->
                 <div class="son" style="display:none">
                     <a href="first.html">一级分类</a>
@@ -39,7 +38,7 @@
                 </div>
             </li>
             <li>
-                <a href="product.html">
+                <a class="active" href="product.html">
                     <span class="glyphicon glyphicon-book"></span>
                     商品管理
                 </a>
@@ -62,12 +61,13 @@
     <div class="container-box">
         <ol class="breadcrumb">
             <li><a href="#">管理系统</a></li>
-            <li class="active">首页</li>
+            <li><a href="#">首页</a></li>
+            <li class="active">商品管理</li>
         </ol>
         <!--内容-->
         <div class="lt-content">
-            <div class ="content-left pull-left"></div>
-            <div class ="content-right pull-right"></div>
+            <div class="content-left pull-left">11</div>
+            <div class="content-right pull-right">22</div>
         </div>
     </div>
 </div>
@@ -100,4 +100,3 @@
 <script src="./lib/nprogress/nprogress.js"></script>
 <script src="./lib/echarts/echarts.common.min.js"></script>
 <script src="./js/common.js"></script>
-<script src="./js/index.js"></script>

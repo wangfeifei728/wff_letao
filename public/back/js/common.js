@@ -14,8 +14,8 @@ $(function () {
         }, 1000);
     });
 
-    // 二级菜单点击显示出来
-    $(".nav-second").on("click", function () {
+    // 分类 点击显示出来
+    $(".son").prev().on("click", function () {
         $(this).next().slideToggle();
     });
 
