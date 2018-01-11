@@ -2,6 +2,16 @@
 
 /*编写所有back样式*/
 
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
 .body_bg {
     background-color: #222d32;
 }
@@ -9,3 +19,135 @@
 .mt_150 {
     margin-top: 150px;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/*侧边栏样式*/
+.lt-aside {
+    width: 180px;
+    height: 100%;
+    background-color: #486672;
+    position: absolute;
+    left: 0;
+    transition: all 1s;
+}
+
+.lt-aside.now {
+    left: -180px;
+}
+
+.lt-brand {
+    width: 180px;
+    height: 50px;
+}
+
+.lt-brand a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #42a4d5;
+    color: #7c1c00;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+}
+
+.lt-user {
+    width: 180px;
+    height: 150px;
+}
+
+.lt-user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    display: block;
+    margin: 30px auto 0;
+}
+
+.lt-user p {
+    height: 40px;
+    line-height: 45px;
+    color: #e3f1ff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav {
+    width: 180px;
+    height: 130px;
+    margin-bottom: 0;
+}
+
+.nav a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #ccc;
+    font-size: 14px;
+    border: 3px solid transparent;
+    padding-left: 30px;
+}
+
+.nav .son a {
+    padding-left: 60px;
+    font-size: 12px;
+}
+
+.nav .active {
+    border-left-color: blue;
+    background-color: #1d1f21;
+}
+
+/*主体*/
+.lt-main {
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+    transition: all 1s;
+}
+
+.lt-main.now {
+    padding-left: 0;
+}
+
+/*头部*/
+.lt-header {
+    width: 100%;
+    height: 50px;
+    background-color: #88aaff;
+    padding: 0 20px 0 20px;
+}
+.lt-header a {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 50px;
+}
+
+/*模态框*/
+.modal-header h4 {
+    font-weight: 700;
+}
+
+.modal-body p {
+    color: #a94442;
+}
+
+/*内容区域*/
+.container-box {
+    margin: 20px 0 0 10px;
+}
+
+
+

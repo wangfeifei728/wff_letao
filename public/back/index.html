@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>主页</title>
+    <title>Fei 主页</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="./lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-<div>我登录进来了！</div>
+<!--侧边栏-->
+<div class="lt-aside">
+    <div class="lt-brand">
+        <a href="index.html">ˊ☠`</a>
+    </div>
+    <div class="lt-user">
+        <img src="./images/header02.jpg" alt="">
+        <p>丶於世界为敌</p>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a class="active" href="user.html">
+                    <span class="glyphicon glyphicon-leaf"></span>
+                    用户管理
+                </a>
+            </li>
+            <li>
+                <a class = "nav-second" href="javascript:;">
+                    <span class="glyphicon glyphicon-apple"></span>
+                    分类管理
+                </a>
+                <div class="son" style = "display:none">
+                    <ul>
+                        <li>
+                            <a href="first.html">
+                                一级分类
+                            </a>
+                        </li>
+                        <li>
+                            <a href="second.html">
+                                二级分类
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="product.html">
+                    <span class="glyphicon glyphicon-book"></span>
+                    商品管理
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--主体-->
+<div class="lt-main">
+    <!--头部-->
+    <div class="lt-header">
+        <a href="javascript:;" class="pull-left first">
+            <span class="glyphicon glyphicon-list-alt"></span>
+        </a>
+        <a href="javascript:;" class="pull-right second">
+            <span class="glyphicon glyphicon-share-alt"></span>
+        </a>
+    </div>
+    <!--内容区域-->
+    <div class="container-box">
+        <ol class="breadcrumb">
+            <li><a href="#">管理系统</a></li>
+            <li class="active">首页</li>
+        </ol>
+        <!--内容-->
+        <div class="lt-content">
+            <div class="content-left pull-left">11</div>
+            <div class="content-right pull-right">22</div>
+        </div>
+    </div>
+</div>
+<!--模态框-->
+<div class="modal fade" tabindex="-1" id="out">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">温馨提示~</h4>
+            </div>
+            <div class="modal-body">
+                <p><span class="glyphicon glyphicon-fire"></span>
+                    你确定要退出后台管理系统吗？
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-info getOut">退出</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/nprogress/nprogress.js"></script>
+<script src="./lib/echarts/echarts.common.min.js"></script>
+<script src="./js/common.js"></script>
