@@ -27,13 +27,13 @@
                 </a>
             </li>
             <li>
-                <a class = "nav-second" href="javascript:;">
+                <a class="nav-second" href="javascript:;">
                     <span class="glyphicon glyphicon-apple"></span>
                     分类管理
                 </a>
                 <!--分类-->
                 <div class="son" style="display:block">
-                    <a class = "active" href="first.html">一级分类</a>
+                    <a class="active" href="first.html">一级分类</a>
                     <a href="second.html">二级分类</a>
                 </div>
             </li>
@@ -58,17 +58,48 @@
         </a>
     </div>
     <!--内容区域-->
-    <div class="container-box">
+    <div class="container-fluid">
         <ol class="breadcrumb">
             <li><a href="#">管理系统</a></li>
-            <li><a href="#">首页</a></li>
             <li><a href="#">分类管理</a></li>
             <li class="active">一级分类</li>
         </ol>
         <!--内容-->
         <div class="lt-content">
-            <div class="content-left pull-left">11</div>
-            <div class="content-right pull-right">22</div>
+            <button class="btn btn-default first_btn">添加商品</button>
+            <!--分类表格-->
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <td width="20%">序号</td>
+                    <td width="80%">分类名称</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>说散就散</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>樱花树下的约定</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>再也没有</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>多幸运</td>
+                </tr>
+                </tbody>
+            </table>
+            <!--分类-->
+            <div class="first_page text-right">
+                <ul class="pagination">
+                    <li class="active"><a href="#">1</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

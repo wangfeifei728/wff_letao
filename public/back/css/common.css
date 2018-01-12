@@ -127,6 +127,7 @@ a:active {
     height: 50px;
     background-color: #88aaff;
     padding: 0 20px 0 20px;
+    margin-bottom: 20px;
 }
 .lt-header a {
     font-size: 20px;
@@ -152,6 +153,29 @@ a:active {
 .content-right {
     width: 50%;
     height: 400px;
+}
+
+/*用户管理页面*/
+.table {
+    border: 1px solid #ddd;
+}
+
+.table.table-bordered td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*商品管理页面*/
+.btn {
+    margin-bottom: 20px;
+}
+
+/*二级页面*/
+
+img {
+    width: 50px;
+    height: 50px;
 }
 
 
