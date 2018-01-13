@@ -23,6 +23,7 @@ $(function () {
     $(".first").on("click" , function() {
         $(".lt-aside").toggleClass("now");
         $(".lt-main").toggleClass("now");
+        $(".lt-header").toggleClass("now");
     });
 
     // 退出显示

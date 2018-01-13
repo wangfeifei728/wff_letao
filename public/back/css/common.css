@@ -36,9 +36,14 @@ a:active {
     width: 180px;
     height: 100%;
     background-color: #486672;
-    position: absolute;
+    position: fixed;
     left: 0;
     transition: all 1s;
+    z-index: 9999;
+}
+
+.lt-aside.now {
+    left: -180px;
 }
 
 .lt-aside.now {
@@ -114,6 +119,7 @@ a:active {
     width: 100%;
     height: 100%;
     padding-left: 180px;
+    padding-top: 70px;
     transition: all 1s;
 }
 
@@ -125,9 +131,16 @@ a:active {
 .lt-header {
     width: 100%;
     height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
     background-color: #88aaff;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 200px;
     margin-bottom: 20px;
+    transition: all 1s;
+}
+.lt-header.now {
+    padding-left: 20px;
 }
 .lt-header a {
     font-size: 20px;
@@ -175,15 +188,35 @@ a:active {
 }
 
 /*二级页面*/
-
-img {
-    width: 50px;
-    height: 50px;
-}
-
 .modal-footer .btn+.btn {
     margin-bottom: 20px;
 }
 
+.dropdown-menu {
+    top: 83%;
+}
+
+.dropdown .btn {
+    margin-bottom: 5px;
+}
+
+.fileupload_box {
+    width: 82px;
+    height: 34px;
+    position: relative;
+}
+.fileupload_box:hover button {
+    border-color: #adadad;
+    background-color: #e6e6e6;
+}
+
+.fileupload_box #fileupload {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
