@@ -81,6 +81,7 @@
                 </tr>
                 </thead>
                 <tbody>
+                <!--挖个坑-->
                 <tr>
                     <td>01</td>
                     <td>
@@ -92,53 +93,14 @@
                     <td>已上架</td>
                     <td>
                         <button class="btn btn-danger btn-sm">下架</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>02</td>
-                    <td>
-                        也许一开始就错了，所以之后再怎么努力，也建不成心中的罗马城。
-                    </td>
-                    <td>布加迪-威龙</td>
-                    <td>1314+</td>
-                    <td>25-39</td>
-                    <td>已上架</td>
-                    <td>
-                        <button class="btn btn-danger btn-sm">下架</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>03</td>
-                    <td>
-                        活着，真是这世上最不容易的事，但我们都在努力。
-                    </td>
-                    <td>兰博基尼-Q1</td>
-                    <td>6699+</td>
-                    <td>88-99</td>
-                    <td>已上架</td>
-                    <td>
-                        <button class="btn btn-danger btn-sm">下架</button>
+                        <button class="btn btn-success btn-sm">已上架</button>
                     </td>
                 </tr>
                 </tbody>
             </table>
             <!--分类-->
-            <div class="pro_page text-right">
-                <ul class="pagination">
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li>
-                        <a href="#" aria-label="Next1">
-                            <span aria-hidden="true">下一页</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Next2">
-                            <span aria-hidden="true">尾页</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="text-right">
+                <ul id="pagination"></ul>
             </div>
         </div>
     </div>
@@ -187,9 +149,34 @@
 </body>
 </html>
 <script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/jquery-fileupload/jquery.ui.widget.js"></script>
+<script src="./lib/jquery-fileupload/jquery.fileupload.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+<script src="./lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
 <script src="./lib/nprogress/nprogress.js"></script>
-<script src="./lib/echarts/echarts.common.min.js"></script>
+<!--引入数据模板包-->
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/product.js"></script>
+<!--数据模板-->
+<script type="text/html" id="tpl2">
+    {{ each rows v i}}
+    <tr>
+        <td>{{ (page-1) * size + i + 1}}</td>
+        <td>{{ v.proName }}</td>
+        <td>{{ v.proDesc }}</td>
+        <td>{{ v.num }}</td>
+        <td>{{ v.size }}</td>
+        <td>{{ v.statu ==1 ? '正常' : '禁用' }}</td>
+        <td data-id="{{ v.id }}">
+            {{ if v.statu === 1 }}
+            <button class="btn btn-danger btn-sm">下架</button>
+            {{ /if }}
+            {{ if v.statu === 0 }}
+            <button class="btn btn-success btn-sm">已上架</button>
+            {{ /if }}
+        </td>
+    </tr>
+    {{ /each }}
+</script>
