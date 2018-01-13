@@ -165,6 +165,9 @@ a:active {
     vertical-align: middle;
 }
 
+.table .btn {
+    margin-bottom: 0;
+}
 
 /*商品管理页面*/
 .btn {
