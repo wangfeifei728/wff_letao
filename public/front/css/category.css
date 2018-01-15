@@ -23,6 +23,10 @@
     font-size: 20px;
 }
 
+.lt_main .cat_left li:last-child a {
+    border-bottom: 2px solid transparent;
+}
+
 .lt_main .cat_left li.now a {
     background-color: #fff;
     border-right-color: transparent;

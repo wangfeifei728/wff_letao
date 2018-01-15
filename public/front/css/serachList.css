@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.searchList_input {
+    padding: 10px;
+}
+
+.searchList_input input {
+    height: 34px;
+    font-size: 12px;
+    margin: 0;
+    border: 1px solid #007aff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.searchList_input button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius:  0 5px 5px 0;
+}
+
+.searchList_nav {
+    height: 30px;
+    line-height: 30px;
+    background-color: #eee;
+
+}
+
+.searchList_nav a {
+    float: left;
+    width: 25%;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+}
+

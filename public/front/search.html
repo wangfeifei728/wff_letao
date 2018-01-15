@@ -15,7 +15,7 @@
 <div class="lt_container">
     <!--头-->
     <div class="lt_header">
-        <a class="icon_left" href="index.html"><span class="fa fa-arrow-left"></span></a>
+        <a class="icon_left" href="javascript:history.go(-1);"><span class="fa fa-arrow-left"></span></a>
         <h4>搜索中心</h4>
     </div>
     <!--主-->
@@ -24,34 +24,30 @@
         <div class="mui-scroll-wrapper">
             <!--子盒子-->
             <div class="mui-scroll">
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
-                <p>我是搜索页面</p>
+                <!--搜索框-->
+                <div class="search_input">
+                    <!--input-->
+                    <input type="text" placeholder="请输入搜索商品关键字 … …">
+                    <!--按钮-->
+                    <button class="mui-btn mui-btn-blue">搜索</button>
+                </div>
+                <!--历史记录-->
+                <div class="search_history">
+                    <!--无搜索记录时显示出来的-->
+                    <p style="display: block;">没有历史记录</p>
+                    <!--输入搜索的时候要弹出的盒子-->
+                    <div class="his_title mui-clearfix" style="display: block;">
+                        <span class="mui-pull-left">搜索历史</span>
+                        <span class="mui-pull-right fa fa-trash">清空记录</span>
+                    </div>
+                    <!--历史内容-->
+                    <ul class="history_content mui-clearfix">
+                        <li class="mui-clearfix">
+                            <a href="#" class="mui-pull-left">慢摇才是正经事儿</a>
+                            <span class="mui-pull-right mui-icon mui-icon-closeempty"></span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -84,8 +80,38 @@
             </li>
         </ul>
     </div>
+    <!--模态框(俩)-->
+    <!--第一个模态框 清空记录所用-->
+    <!--消息提示框-->
+    <div class="mui-popup mui-popup-in news_search" style="display: none;">
+        <div class="mui-popup-inner">
+            <div class="mui-popup-title">温馨提示~</div>
+            <div class="mui-popup-text">你是否要清空所有的历史记录？</div>
+        </div>
+        <div class="mui-popup-buttons">
+            <span class="mui-popup-button">取消</span>
+            <span class="mui-popup-button mui-popup-button-bold">确认</span></div>
+    </div>
+    <!--蒙层-->
+    <div class="mui-popup-backdrop mui-active up_search" style="display: none;"></div>
+    <!--第二个模态框 点击× 删除一行记录-->
+    <!--消息提示框-->
+    <div class="mui-popup mui-popup-in news_search" style="display: none;">
+        <div class="mui-popup-inner">
+            <div class="mui-popup-title">温馨提示~</div>
+            <div class="mui-popup-text">你确认要删除吗？亲</div>
+        </div>
+        <div class="mui-popup-buttons">
+            <span class="mui-popup-button">否</span>
+            <span class="mui-popup-button mui-popup-button-bold">是</span></div>
+    </div>
+    <!--蒙层-->
+    <div class="mui-popup-backdrop mui-active up_search" style="display: none;"></div>
 </div>
 </body>
 </html>
+<script src="./lib/zepto/zepto.min.js"></script>
 <script src="lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
+<script src="./js/serach.js"></script>

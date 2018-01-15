@@ -15,7 +15,7 @@
 <div class="lt_container">
     <!--头-->
     <div class="lt_header">
-        <a class="icon_left" href="index.html"><span class="fa fa-arrow-left"></span></a>
+        <a class="icon_left" href="javascript:history.go(-1);"><span class="fa fa-arrow-left"></span></a>
         <h4>乐淘购物</h4>
     </div>
     <!--主-->
@@ -24,38 +24,29 @@
         <div class="mui-scroll-wrapper">
             <!--子盒子-->
             <div class="mui-scroll">
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
-                <p>我是购物页面</p>
+                <!--下拉刷新容器-->
+                <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--数据列表-->
+                        <ul class="mui-table-view mui-table-view-chevron">
+                            ……
+                        </ul>
+                    </div>
+                </div>
+
             </div>
+
         </div>
+    </div>
+    <!--生成订单-->
+    <div class="lt_total">
+        <!--金额-->
+        <div class="money mui-pull-left">
+            <span class="total_money">订单总金额</span>
+            <span class="total">&yen;00:00</span>
+        </div>
+        <!--订单-->
+        <a href="javascript:;" class="mui-pull-right btn_order">生成订单</a>
     </div>
     <!--尾-->
     <div class="lt_footer">
@@ -89,5 +80,8 @@
 </div>
 </body>
 </html>
+<script src="./lib/zepto/zepto.min.js"></script>
 <script src="lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
+<script src="./js/cart.js"></script>

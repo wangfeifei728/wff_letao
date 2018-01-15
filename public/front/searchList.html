@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="lib/mui/css/mui.css">
     <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/serachList.css">
 </head>
 <body>
 <div class="lt_container">
     <!--头-->
     <div class="lt_header">
-        <a class="icon_left" href="index.html"><span class="fa fa-arrow-left"></span></a>
+        <a class="icon_left" href="javascript:history.go(-1);">
+            <span class="fa fa-arrow-left"></span></a>
         <h4>商品列表</h4>
     </div>
     <!--主-->
@@ -23,7 +25,67 @@
         <div class="mui-scroll-wrapper">
             <!--子盒子-->
             <div class="mui-scroll">
-
+                <!--搜索框-->
+                <div class="searchList_input">
+                    <!--input-->
+                    <input type="text" placeholder="请输入搜索关键字~">
+                    <!--按钮-->
+                    <button class="mui-btn mui-btn-blue">搜索</button>
+                </div>
+                <!--导航栏-->
+                <div class="searchList_nav">
+                    <a href="javascript:;">上架时间
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <a href="javascript:;">价格
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <a href="javascript:;">库存
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <a href="javascript:;">折扣
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                </div>
+                <!--商品区域-->
+                <div class="lt_product mui-clearfix">
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
+                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                        <p>
+                            <span class="price">&yen;666</span>
+                            <span class="oldPrice">&yen;999</span>
+                        </p>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
+                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                        <p>
+                            <span class="price">&yen;666</span>
+                            <span class="oldPrice">&yen;999</span>
+                        </p>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
+                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                        <p>
+                            <span class="price">&yen;666</span>
+                            <span class="oldPrice">&yen;999</span>
+                        </p>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
+                    </a>
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
+                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
+                        <p>
+                            <span class="price">&yen;666</span>
+                            <span class="oldPrice">&yen;999</span>
+                        </p>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -59,5 +121,8 @@
 </div>
 </body>
 </html>
+<script src="./lib/zepto/zepto.min.js"></script>
 <script src="lib/mui/js/mui.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
+<script src="./js/serachList.js"></script>
