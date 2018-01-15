@@ -1,35 +1,10 @@
 @charset "UTF-8";
-.lt-nav {
-    padding: 10px;
+
+.lt_nav {
+  padding: 10px;
 }
 
-.lt-nav li {
-    float: left;
-    width: 33.33%;
-}
-
-.lt-product {
-    padding: 10px;
-}
-
-.lt-product a {
-    float: left;
-    width: 48%;
-    display: block;
-    border: 1px solid #000;
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.lt-product a:nth-child(odd) {
-    margin-right: 4%;
-}
-
-.lt-product .price {
-    color: red;
-}
-
-.lt-product .oldPrice {
-    text-decoration: line-through;
+.lt_nav li {
+  width: 33.33%;
+  float: left;
 }

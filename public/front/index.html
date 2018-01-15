@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Fei-手机端乐淘首页</title>
-    <link rel="icon" href="./favicon.ico">
-    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-    <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/mui/css/mui.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-<div class="lt-container">
+
+<div class="lt_container">
     <!--头-->
-    <div class="lt-header">
-        <a href="index.html" class="header-left">
-            <span class="fa fa-home"></span>
-        </a>
+    <div class="lt_header">
+        <a class="icon_left" href="index.html"><span class="fa fa-car"></span></a>
         <h4>樱花树下的约定</h4>
-        <a href="search.html" class="header-right">
-            <span class="fa fa-search"></span>
-        </a>
+        <a class="icon_right" href="search.html"><span class="fa fa-rocket"></span></a>
     </div>
     <!--主-->
-    <div class="lt-main">
-        <!--区域滚动-->
+    <div class="lt_main">
+        <!--滚动容器的父盒子-->
         <div class="mui-scroll-wrapper">
+            <!--子盒子-->
             <div class="mui-scroll">
                 <!--轮播图-->
-                <!--父容器-->
                 <div class="mui-slider">
-                    <!--子容器 图片-->
                     <div class="mui-slider-group mui-slider-loop">
-                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner6.png" /></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png"/></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png"/></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png"/></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png"/></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner5.png"/></a></div>
-                        <div class="mui-slider-item"><a href="#"><img src="./images/banner6.png"/></a></div>
-                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                                src="images/banner6.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner1.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner2.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner3.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner4.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner5.png"/></a></div>
+                        <div class="mui-slider-item"><a href="#"><img src="images/banner6.png"/></a></div>
+                        <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img
+                                src="images/banner1.png"/></a></div>
                     </div>
-                    <!--小圆点-->
                     <div class="mui-slider-indicator">
                         <div class="mui-indicator mui-active"></div>
                         <div class="mui-indicator"></div>
@@ -50,87 +50,61 @@
                         <div class="mui-indicator"></div>
                     </div>
                 </div>
-                <!--商品导航栏-->
-                <div class="lt-nav">
+                <!--导航栏-->
+                <div class="lt_nav">
                     <ul class="mui-clearfix">
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav1.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav2.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav3.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav4.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav5.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/nav6.png" alt="">
-                            </a>
-                        </li>
+                        <li><a href="#"><img src="images/nav1.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/nav2.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/nav3.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/nav4.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/nav5.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/nav6.png" alt=""></a></li>
                     </ul>
                 </div>
-                <!--商品栏-->
-                <div class="lt-product">
-                    <a href="#">
-                        <img src="./images/product.jpg" alt="">
+                <!--商品区域-->
+                <div class="lt_product mui-clearfix">
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
                         <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
                         <p>
                             <span class="price">&yen;666</span>
                             <span class="oldPrice">&yen;999</span>
                         </p>
-                        <button class="mui-btn mui-btn-primary">选择商品</button>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
                     </a>
-                    <a href="#">
-                        <img src="./images/product.jpg" alt="">
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
                         <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
                         <p>
                             <span class="price">&yen;666</span>
                             <span class="oldPrice">&yen;999</span>
                         </p>
-                        <button class="mui-btn mui-btn-primary">选择商品</button>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
                     </a>
-                    <a href="#">
-                        <img src="./images/product.jpg" alt="">
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
                         <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
                         <p>
                             <span class="price">&yen;666</span>
                             <span class="oldPrice">&yen;999</span>
                         </p>
-                        <button class="mui-btn mui-btn-primary">选择商品</button>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
                     </a>
-                    <a href="#">
-                        <img src="./images/product.jpg" alt="">
+                    <a href="#" class="item">
+                        <img src="images/product.jpg" alt="">
                         <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
                         <p>
                             <span class="price">&yen;666</span>
                             <span class="oldPrice">&yen;999</span>
                         </p>
-                        <button class="mui-btn mui-btn-primary">选择商品</button>
+                        <button class="mui-btn mui-btn-blue">立即购买</button>
                     </a>
                 </div>
             </div>
         </div>
-
-
     </div>
     <!--尾-->
-    <div class="lt-footer">
+    <div class="lt_footer">
         <ul class="mui-clearfix">
             <li class="now">
                 <a href="index.html">
@@ -161,5 +135,5 @@
 </div>
 </body>
 </html>
-<script src="./lib/mui/js/mui.min.js"></script>
-<script src="./js/common.js"></script>
+<script src="lib/mui/js/mui.js"></script>
+<script src="js/common.js"></script>
