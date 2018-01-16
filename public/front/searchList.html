@@ -28,19 +28,19 @@
                 <!--搜索框-->
                 <div class="searchList_input">
                     <!--input-->
-                    <input type="text" placeholder="请输入搜索关键字~">
+                    <input class="sl_text" type="text" placeholder="请输入搜索关键字~">
                     <!--按钮-->
-                    <button class="mui-btn mui-btn-blue">搜索</button>
+                    <button class="mui-btn mui-btn-blue sl_btn">搜索</button>
                 </div>
                 <!--导航栏-->
                 <div class="searchList_nav">
                     <a href="javascript:;">上架时间
                         <span class="fa fa-angle-down"></span>
                     </a>
-                    <a href="javascript:;">价格
+                    <a data-name="price" href="javascript:;">价格
                         <span class="fa fa-angle-down"></span>
                     </a>
-                    <a href="javascript:;">库存
+                    <a data-name="num" href="javascript:;">库存
                         <span class="fa fa-angle-down"></span>
                     </a>
                     <a href="javascript:;">折扣
@@ -49,42 +49,17 @@
                 </div>
                 <!--商品区域-->
                 <div class="lt_product mui-clearfix">
-                    <a href="#" class="item">
-                        <img src="images/product.jpg" alt="">
-                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
-                        <p>
-                            <span class="price">&yen;666</span>
-                            <span class="oldPrice">&yen;999</span>
-                        </p>
-                        <button class="mui-btn mui-btn-blue">立即购买</button>
-                    </a>
-                    <a href="#" class="item">
-                        <img src="images/product.jpg" alt="">
-                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
-                        <p>
-                            <span class="price">&yen;666</span>
-                            <span class="oldPrice">&yen;999</span>
-                        </p>
-                        <button class="mui-btn mui-btn-blue">立即购买</button>
-                    </a>
-                    <a href="#" class="item">
-                        <img src="images/product.jpg" alt="">
-                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
-                        <p>
-                            <span class="price">&yen;666</span>
-                            <span class="oldPrice">&yen;999</span>
-                        </p>
-                        <button class="mui-btn mui-btn-blue">立即购买</button>
-                    </a>
-                    <a href="#" class="item">
-                        <img src="images/product.jpg" alt="">
-                        <p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>
-                        <p>
-                            <span class="price">&yen;666</span>
-                            <span class="oldPrice">&yen;999</span>
-                        </p>
-                        <button class="mui-btn mui-btn-blue">立即购买</button>
-                    </a>
+                    <!--加载中的盒子-->
+                    <div class="loading"></div>
+                    <!--<a href="#" class="item">-->
+                        <!--<img src="images/product.jpg" alt="">-->
+                        <!--<p class="mui-ellipsis-2">adidas阿迪达斯 男式 场下休闲篮球鞋S83700场下休闲篮球鞋S83700 </p>-->
+                        <!--<p>-->
+                            <!--<span class="price">&yen;666</span>-->
+                            <!--<span class="oldPrice">&yen;999</span>-->
+                        <!--</p>-->
+                        <!--<button class="mui-btn mui-btn-blue">立即购买</button>-->
+                    <!--</a>-->
                 </div>
             </div>
         </div>
@@ -126,3 +101,22 @@
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
 <script src="./js/serachList.js"></script>
+<!--模板引擎-->
+<script type="text/html" id="sl_tpl">
+
+    {{ if data.length == 0 }}
+    <p>无此商品的相关信息，可能在更新中…</p>
+    {{ /if }}
+
+    {{ each data v i }}
+    <a href="product.html?productId={{ v.id }}" class="item">
+        <img src="{{ v.pic[0].picAddr }}" alt="">
+        <p class=" proName mui-ellipsis-2"> {{ v.proName }}</p>
+        <p>
+            <span class="price">&yen;{{ v.price }}</span>
+            <span class="oldPrice">&yen;{{ v.oldPrice }}</span>
+        </p>
+        <button class="mui-btn mui-btn-blue">立即购买</button>
+    </a>
+    {{ /each }}
+</script>

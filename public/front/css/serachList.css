@@ -35,3 +35,29 @@
     text-align: center;
 }
 
+.searchList_nav .now {
+     color: orangered;
+}
+
+.loading {
+    width: 40px;
+    height: 40px;
+    border: 6px double #069;
+    border-radius: 10px;
+    line-height: 32px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 220px;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+

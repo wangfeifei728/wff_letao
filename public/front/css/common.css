@@ -116,6 +116,10 @@ img {
   padding: 10px;
 }
 
+.lt_product .proName {
+  height: 39px;
+}
+
 .lt_product .item {
   display: block;
   float: left;
