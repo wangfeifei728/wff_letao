@@ -1,4 +1,51 @@
 @charset "UTF-8";
-.register_input {
+
+.input_box {
     padding: 10px;
 }
+
+.yzm_text input {
+    width: 65%;
+}
+
+.yzm_text button.mui_tryText {
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.yzm_text button.disabled {
+    background-color: #999;
+    border: 1px solid #999;
+}
+
+.input_box input[type= "submit"] {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+}
+
+.register_text  {
+    margin-top: 5px;
+}
+
+.register_text .reg_l,
+.register_text .reg_r a {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
